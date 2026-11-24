@@ -66,6 +66,11 @@ export default function Footer() {
                 </a>
               </li>
               <li>
+                <a href="#contributions" className="hover:text-indigo-400 transition-colors">
+                  GitHub Activity
+                </a>
+              </li>
+              <li>
                 <a href="#certificates" className="hover:text-indigo-400 transition-colors">
                   Certificates
                 </a>

@@ -80,9 +80,9 @@ export const personalData = {
   socials: [
     {
       name: "GitHub",
-      url: "https://github.com",
+      url: "https://github.com/Ilhamelvara",
       icon: "Github",
-      username: "@ilhamputra",
+      username: "@Ilhamelvara",
     },
     {
       name: "LinkedIn",

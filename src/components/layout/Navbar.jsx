@@ -8,6 +8,7 @@ const navItems = [
   { label: 'About', href: '#about' },
   { label: 'Skills', href: '#skills' },
   { label: 'Projects', href: '#projects' },
+  { label: 'Activity', href: '#contributions' },
   { label: 'Certificates', href: '#certificates' },
   { label: 'Contact', href: '#contact' },
 ];
@@ -22,13 +23,16 @@ export default function Navbar({ theme, toggleTheme }) {
       setIsScrolled(window.scrollY > 20);
 
       const sections = navItems.map((item) => item.href.substring(1));
-      const scrollPosition = window.scrollY + 120;
+      const scrollPosition = window.scrollY + 140;
 
       for (let i = sections.length - 1; i >= 0; i--) {
         const sectionEl = document.getElementById(sections[i]);
-        if (sectionEl && sectionEl.offsetTop <= scrollPosition) {
-          setActiveSection(sections[i]);
-          break;
+        if (sectionEl) {
+          const top = sectionEl.getBoundingClientRect().top + window.scrollY;
+          if (top <= scrollPosition) {
+            setActiveSection(sections[i]);
+            break;
+          }
         }
       }
     };
@@ -42,7 +46,14 @@ export default function Navbar({ theme, toggleTheme }) {
     setMobileMenuOpen(false);
     const target = document.querySelector(href);
     if (target) {
-      target.scrollIntoView({ behavior: 'smooth' });
+      const navOffset = 85;
+      const elementPosition = target.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - navOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth',
+      });
     }
   };
 

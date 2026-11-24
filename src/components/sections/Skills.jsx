@@ -75,7 +75,7 @@ export default function Skills() {
       : skillCategories.filter((cat) => cat.id === activeTab);
 
   return (
-    <section id="skills" className="py-20 lg:py-28 relative bg-secondary/30">
+    <section id="skills" className="py-20 lg:py-28 relative bg-secondary/30 scroll-mt-20 lg:scroll-mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           badge="Technical Skills"

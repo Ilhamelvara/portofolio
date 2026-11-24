@@ -28,7 +28,7 @@ export default function Projects() {
   }, [activeCategory]);
 
   return (
-    <section id="projects" className="py-20 lg:py-28 relative">
+    <section id="projects" className="py-20 lg:py-28 relative scroll-mt-20 lg:scroll-mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           badge="Featured Projects"

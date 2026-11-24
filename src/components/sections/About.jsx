@@ -17,7 +17,7 @@ export default function About() {
   const { about } = personalData;
 
   return (
-    <section id="about" className="py-20 lg:py-28 relative">
+    <section id="about" className="py-20 lg:py-28 relative scroll-mt-20 lg:scroll-mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           badge="About Me"
@@ -26,7 +26,7 @@ export default function About() {
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
-          {/* Left Column: Photo Card & Quick Stats Grid (Perfect vertical balance) */}
+          {/* Left Column: Photo Card & Quick Stats Grid */}
           <ScrollReveal direction="left" delay={0.1} className="lg:col-span-5 space-y-6">
             {/* Dedicated Profile Photo Card */}
             <div className="glass-card p-4 rounded-2xl border border-theme overflow-hidden group">

@@ -32,7 +32,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-[92vh] flex items-center justify-center pt-28 pb-16 overflow-hidden"
+      className="relative min-h-[92vh] flex items-center justify-center pt-28 pb-16 overflow-hidden scroll-mt-20 lg:scroll-mt-24"
     >
       {/* Background Subtle Gradient & Grid Patterns */}
       <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
